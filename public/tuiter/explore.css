@@ -1,0 +1,131 @@
+.wd-background{
+    background-color: black;
+}
+
+.wd-rounded-corners {
+    border-radius: 50px;
+    border: 0 solid black;
+    background-color: #202025;
+    width: 85%;
+    font-size: 15px;
+    color: white;
+    background-image: url('searchicon.png');
+    background-size: 20px 20px;
+    background-repeat:no-repeat;
+    background-position:left+10px center;outline:0;
+}
+
+.wd-padding-fat {
+    padding: 12px;
+    padding-left: 50px;
+}
+
+.wd-search {
+    width: 90%;
+    float: left;
+}
+
+#wd-gear {
+    width: 10%;
+    float: right;
+
+}
+
+#wd-gear img {
+    width: 25px;
+    height: 25px;
+    float: right;
+    padding: 12px;
+
+}
+
+#wd-links{
+    width: 100%;
+}
+
+#wd-links ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+#wd-links li{
+    float: left;
+    padding-right: 12px;
+}
+
+#wd-links li a{
+    display: block;
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-bottom: transparent solid 1px;
+
+}
+
+#wd-links-active {
+    background-color: black;
+    border-bottom: rgb(29, 161, 242) solid 3px;
+    color: rgb(29, 161, 242);
+    font-weight: bold;
+}
+
+
+.wd-container {
+    max-width: 600px;
+    margin: auto;
+    border-color:  rgb(47, 51, 54);
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.wd-element-explore{
+    border-color:  rgb(47, 51, 54);
+    border-width: 1px;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 120px;
+}
+
+.wd-img-dots{
+    float: right;
+    padding-top: 50px;
+    width: 18px;
+    height: 6px;
+    padding-right: 16px;
+}
+
+.wd-heading-element{
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    font-weight: normal;
+}
+
+.wd-content-element{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-heading-element-white{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-image-element{
+    border-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 10px;
+    padding-right: 16px;
+    float: right;
+    height: 100px;
+    width: 100px;
+
+}
