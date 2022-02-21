@@ -6,7 +6,7 @@
     border-radius: 50px;
     border: 0 solid black;
     background-color: #202025;
-    width: 85%;
+    width: 100%;
     font-size: 15px;
     color: white;
     background-image: url('searchicon.png');
@@ -104,28 +104,55 @@
     font-size: 13px;
     color: rgb(110, 118, 125);
     font-weight: normal;
+    margin-bottom: 3px;
 }
 
 .wd-content-element{
     font-size: 15px;
     color: white;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .wd-heading-element-white{
-    font-size: 13px;
+    font-size: 14px;
     color: white;
     font-weight: bold;
+    margin-bottom: 3px;
+    text-align: justify;
 }
 
 .wd-image-element{
     border-radius: 20px;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    padding-top: 10px;
-    padding-right: 16px;
     float: right;
     height: 100px;
     width: 100px;
+
+}
+
+.wd-row{
+    border-color:  rgb(47, 51, 54);
+    border-width: 1px;
+    border-style: solid;border-top:none; border-left:none; border-right:none;
+}
+
+.wd-overlay-text {
+    position: absolute;
+    top: 330px;
+    width: fit-content;
+
+}
+
+.wd-overlay-text-2 {
+    position: absolute;
+    top:280px;
+    width: fit-content;
+
+}
+
+.wd-overlay-text-3 {
+    position: absolute;
+    top: 265px;
+    width: fit-content;
 
 }
