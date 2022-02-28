@@ -64,7 +64,7 @@ const NavigationSidebar = (active) => {
     </div>
     <br>
 
-    <button type="button" class="btn btn-primary wd-blueButton wd-width100 mt-3 pt-2 pb-2 wd-borderRadius50 wd-allowOverflow wd-font14 ps-0 pe-0">Tweet</button>
+    <button type="button" class="btn btn-primary wd-blueButton wd-width100 mt-3 pt-2 pb-2 wd-borderRadius50 wd-allowOverflow wd-font14 ps-0 pe-0">Tuit</button>
     `);
 }
 export default NavigationSidebar;
