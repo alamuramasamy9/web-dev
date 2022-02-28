@@ -7,7 +7,7 @@ const NavigationSidebar = (active) => {
     <div class="btn-group-vertical wd-width100 wd-darkGreyBG wd-borderRadius4px" role="group" >
 
         <label class="btn border text-start border-0 pt-2 pb-2 " for="navbtn-home">
-            <i class="fab fa-twitter fa-2x wd-width20 " style="color: white;"></i>
+            <i class="fab fa-twitter  wd-width20 " style="color: white;"></i>
         </label>
 
         <input type="radio" class="btn-check wd-navBtn " name="vbtn-radio" id="navbtn-home" autocomplete="off" ${active=='home'? `checked`:`` } onClick='location.href="../HomeScreen/home.html"'>
