@@ -8,8 +8,6 @@
     --twitterBlue: dodgerblue;
 }
 
-/* FLEX STYLING */
-
 .wd-flex {display: flex}
 .wd-flex-inline {display: flex; display: inline-flex;}
 

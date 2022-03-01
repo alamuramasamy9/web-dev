@@ -6,7 +6,7 @@ const ExploreComponent = () => {
                 <div class="wd-flex-row wd-flex-alignStart wd-flex-justifySpaceBetween mb-2">
                     <div class="wd-flex-row wd-flex-justifyStart wd-flex-alignCenter wd-searchBoxDiv wd-borderRadius50 pt-1 pb-1 wd-whiteBG">
                         <i class="fa fa-search me-2 ms-2" style="color: gray;" ></i>
-                        <input style="border: none;" class="wd-searchBox wd-transparentBG" placeholder="Search Twitter">
+                        <input style="border: none;" class="wd-searchBox wd-transparentBG" placeholder="Search Tuiter">
                     </div>
 
                     <a href="explore-settings.html">
