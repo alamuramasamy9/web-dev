@@ -3,7 +3,7 @@ import React from 'react'
 const WhoToFollowListItem = ({ who, key }) => {
 
     return (
-        <a key={key} href="#" className="list-group-item list-group-item-action wd-darkGreyBG wd-noBorders ">
+        <a key={key} href="/" className="list-group-item list-group-item-action wd-darkGreyBG wd-noBorders ">
             <div className='row'>
 
                 <div className='col-8 wd-flex-row'>

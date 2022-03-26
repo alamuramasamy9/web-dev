@@ -52,19 +52,19 @@ const PostItem = ({ post, key }) => {
 
 
             <div className='wd-flex-row wd-flex-justifySpaceBetween wd-flex-alignCenter ps-4 pe-4 mt-2' >
-                <a href='#' id='comment' className='wd-noLinkDecor wd-lightGreyFont'>
+                <a href='/' id='comment' className='wd-noLinkDecor wd-lightGreyFont'>
                     <i className="far fa-comment"></i>
                     {post.comment}
                 </a>
-                <a href='#' id='retweet' className='wd-noLinkDecor'>
+                <a href='/' id='retweet' className='wd-noLinkDecor'>
                     <i className="fas fa-retweet"></i>
                     {post.retweet}
                 </a>
-                <a href='#' id='like' className='wd-noLinkDecor'>
+                <a href='/' id='like' className='wd-noLinkDecor'>
                     <i className="far fa-heart"></i>
                     {post.like}
                 </a>
-                <a href='#' id='share' className='wd-noLinkDecor'>
+                <a href='/' id='share' className='wd-noLinkDecor'>
                     <i className="fas fa-upload"></i>
                 </a>
             </div>

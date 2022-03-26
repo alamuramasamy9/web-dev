@@ -23,8 +23,9 @@ function App() {
                     <Route path="/tuiter/explore"
                            exact={true}
                            element={<Tuiter/>}/>
-                    <Route path="tuiter/home" component={HomeScreen} />
-                    <Route path="tuiter/explore" component={ExploreScreen} />
+                    <Route path="/tuiter/home" element={<HomeScreen/>}/>
+                    <Route path="/tuiter/explore" element={<ExploreScreen/>}/>
+
                 </Routes>
             </div>
         </BrowserRouter>

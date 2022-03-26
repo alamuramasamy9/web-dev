@@ -2,7 +2,7 @@ import React from 'react'
 
 const PostSummaryItem = ({ post, key }) => {
     return (
-        <a key={key} href="#" className="list-group-item list-group-item-action wd-transparentBG wd-noLinkOutline">
+        <a key={key} href="/" className="list-group-item list-group-item-action wd-transparentBG wd-noLinkOutline">
             <div className="wd-flex-row wd-flex-justifySpaceBetween wd-flex-alignCenter">
                 <div className="wd-flex-row pe-2">
                     <div className="wd-flex-column">
