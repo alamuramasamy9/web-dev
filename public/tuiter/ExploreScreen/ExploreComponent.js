@@ -25,7 +25,6 @@ const ExploreComponent = () => {
                 </div>
             </nav>
 
-           <!-- image with overlaid text -->
            <a href="#" class="list-group-item list-group-item-action pt-0 pb-0 ps-0 pe-0 wd-transparentBG">
                 <div class="position-relative wd-textCenter wd-whiteFont">
                     <img src="../starship.jpg" alt="starship" width="100%" >

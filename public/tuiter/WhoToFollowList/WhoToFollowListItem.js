@@ -17,7 +17,7 @@ const WhoToFollowListItem = (who) => {
                 </div>
             </div>
                 <div>
-                    <button class="btn-sm btn-primary wd-font14 wd-borderRadius50 pt-1 pb-1"> Follow </button>
+                    <button class="btn-sm btn-primary wd-font13 wd-borderRadius50 pt-1 pb-1"> Follow </button>
                 </div>
             </div>
         </a>
