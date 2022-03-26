@@ -27,7 +27,7 @@ const ExploreComponent = () => {
                 </div>
             </nav>
 
-            <a href="#" className="list-group-item list-group-item-action pt-0 pb-0 ps-0 pe-0 wd-transparentBG">
+            <a href="/" className="list-group-item list-group-item-action pt-0 pb-0 ps-0 pe-0 wd-transparentBG">
                 <div className="position-relative wd-textCenter wd-whiteFont">
                     <img src="/images/starship.jpg" alt="starship" width="100%" />
                     <div className="position-absolute wd-font20 wd-fontBold" style={{ bottom: "8px", left: "16px", zIndex: "1000" }}>SpaceX's Starship</div>
