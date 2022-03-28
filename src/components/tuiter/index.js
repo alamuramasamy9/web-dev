@@ -9,7 +9,7 @@ import ProfileScreen from "./ProfileScreen";
 import whoReducer from "/reducers/who-reducer";
 import tweets from "reducers/tweets";
 import profile from "reducers/profile"
-import WhoToFollowList from "./who-to-follow-list";
+
 
 const reducer = combineReducers({ tweets: tweets, whoReducer, profile })
 const store = createStore(reducer);
