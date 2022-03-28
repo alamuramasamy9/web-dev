@@ -4,7 +4,7 @@ import { combineReducers, createStore } from "redux";
 import { Provider } from "react-redux";
 
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
-import HomeScreen from "./HomeScreen";
+import HomeScreen from "./HomeScreen/HomeComponent";
 import ProfileScreen from "./ProfileScreen";
 import whoReducer from "/reducers/who-reducer";
 import tweets from "reducers/tweets";
