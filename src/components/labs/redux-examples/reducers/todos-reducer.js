@@ -27,10 +27,6 @@ const todosReducer = (state = data, action) => {
                     todo !== action.todo);
 
         case 'create-todo':
-            const newTodo = {
-                ...action.todo,
-                _id: (new Date()).getTime() + ""
-            };
             return [
                 ...state,
                 action.todo,
