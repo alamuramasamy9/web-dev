@@ -2,7 +2,7 @@ import React from 'react'
 
 const PostSummaryItem = ({ post, key }) => {
     return (
-        <a key={key} href="#" className="list-group-item list-group-item-action wd-noLinkOutline">
+        <a key={key} href="/" className="list-group-item list-group-item-action wd-transparentBG wd-noLinkOutline">
             <div className="wd-flex-row wd-flex-justifySpaceBetween wd-flex-alignCenter">
                 <div className="wd-flex-row pe-2">
                     <div className="wd-flex-column">
@@ -17,11 +17,11 @@ const PostSummaryItem = ({ post, key }) => {
                             <span className="wd-lightGreyFont">- {post.time}</span>
                         </div>
                         <div className="wd-whiteFont">{post.title}</div>
-                        {post.tweets && <span className="wd-lightGreyFont">{post.tweets} Tweets</span>}
+                        {post.tweets && <span className="wd-lightGreyFont">{post.tweets} Tuits</span>}
                     </div>
                 </div>
                 <div>
-                    <img src={post.image} width="80px" height="80px" className="rounded"></img>
+                    <img src={post.image} width="80px" height="80px" className="rounded" alt=""/>
                 </div>
             </div>
         </a>

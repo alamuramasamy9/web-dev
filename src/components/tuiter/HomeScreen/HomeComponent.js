@@ -1,9 +1,9 @@
 import PostList from "../PostList/index";
 
-const HomeScreen = () => {
+const HomeComponent = () => {
     return (
         <PostList />
     );
 }
 
-export default HomeScreen;
+export default HomeComponent;
