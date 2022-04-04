@@ -1,16 +1,17 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
+
 
 :root {
   --white: #FFFFFF;
@@ -22,38 +23,44 @@ code {
   --twitterBlue: dodgerblue;
 }
 
+/* FLEX STYLING */
+
 .wd-flex {display: flex}
 .wd-flex-inline {display: flex; display: inline-flex;}
 
-.wd-flex-row {display: flex; flex-direction: row;}
-.wd-flex-column {display: flex; flex-direction: column;}
-.wd-flex-rowReverse {display: flex; flex-direction: row-reverse;}
-.wd-flex-columnReverse {display: flex; flex-direction: column-reverse;}
+.wd-flex-row {display: flex !important; flex-direction: row !important;}                              /* ltr - default */
+.wd-flex-column {display: flex; flex-direction: column;}                        /* top-bottom */
+.wd-flex-rowReverse {display: flex; flex-direction: row-reverse;}               /* rtl */
+.wd-flex-columnReverse {display: flex; flex-direction: column-reverse;}         /* bottom-top */
 
-.wd-flex-wrap {display: flex; flex-wrap: wrap;}
-.wd-flex-noWrap {display: flex; flex-wrap: nowrap;}
+.wd-flex-wrap {display: flex; flex-wrap: wrap;}                                 /* one-line */
+.wd-flex-noWrap {display: flex; flex-wrap: nowrap;}                             /* multi-line */
 
-.wd-flex-alignStart {display: flex; align-items: flex-start;}
-.wd-flex-alignEnd {display: flex; align-items: flex-end;}
-.wd-flex-alignCenter {display: flex; align-items: center;}
-.wd-flex-alignStretch {display: flex; align-items: stretch;}
+.wd-flex-alignStart {display: flex; align-items: flex-start;}                   /* vertical-align to top */
+.wd-flex-alignEnd {display: flex; align-items: flex-end;}                       /* vertical-align to bottom */
+.wd-flex-alignCenter {display: flex; align-items: center;}                      /* vertical-align to center */
+.wd-flex-alignStretch {display: flex; align-items: stretch;}                    /* same height on all (default) */
 
-.wd-flex-justifyStart {display: flex; justify-content: flex-start;}
-.wd-flex-justifyCenter {display: flex; justify-content: center;}
-.wd-flex-justifyEnd {display: flex; justify-content: flex-end;}
-.wd-flex-justifySpaceBetween {display: flex; justify-content: space-between;}
-.wd-flex-justifySpaceAround {display: flex; justify-content: space-around;}
-.wd-flex-justifySpaceEvenly {display: flex; justify-content: space-evenly;}
+.wd-flex-justifyStart {display: flex; justify-content: flex-start;}             /* [xxx        ] */
+.wd-flex-justifyCenter {display: flex; justify-content: center;}                /* [    xxx    ] */
+.wd-flex-justifyEnd {display: flex; justify-content: flex-end;}                 /* [        xxx] */
+.wd-flex-justifySpaceBetween {display: flex; justify-content: space-between;}   /* [        xxx] */
+.wd-flex-justifySpaceAround {display: flex; justify-content: space-around;}     /* [ x   x   x ] */
+.wd-flex-justifySpaceEvenly {display: flex; justify-content: space-evenly;}     /* [  x  x  x  ] */
 
+/* FONT SIZES */
 .wd-font10 {font-size: 10px}
 .wd-font12 {font-size: 12px !important}
 .wd-font13 {font-size: 13px !important}
 .wd-font14 {font-size: 14px !important}
 .wd-font15 {font-size: 15px !important}
-.wd-font16 {font-size: 16px}
-.wd-font18 {font-size: 18px}
-.wd-font20 {font-size: 20px}
+.wd-font16 {font-size: 16px !important}
+.wd-font18 {font-size: 18px !important}
+.wd-font20 {font-size: 20px !important}
+.wd-font30 {font-size: 30px !important}
 
+
+/* FONT STYLING */
 .wd-fontBold {font-weight: bold}
 .wd-fontItalic {font-style: italic}
 .wd-fontFamily {font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif}
@@ -61,15 +68,20 @@ code {
 .wd-textLeft {text-align: left}
 .wd-textRight {text-align: right}
 
-.wd-whiteFont {color:var(--white) !important;}
-.wd-blackFont {color:var(--black);}
+/* FONT COLORS */
+.wd-whiteFont {color:var(--white)!important;}
+.wd-blackFont {color:var(--black) !important;}
 .wd-lightGreyFont {color:var(--lightGrey);}
 .wd-darkGreyFont {color:var(--darkGrey);}
 .wd-lightBlueFont {color:var(--lightBlue) !important;}
 .wd-twitterBlueFont {color:var(--twitterBlue);}
 
+/* FLOATS */
 .wd-floatLeft {float: left;}
 .wd-floatRight {float: right;}
+
+
+/* MARGINS */
 
 .wd-noMargin {margin: 0px;}
 .wd-noMarginTop {margin-top: 0px;}
@@ -107,16 +119,48 @@ code {
 .wd-marginBottom60 {margin-bottom: 60px;}
 .wd-marginLeft60 {margin-left: 60px;}
 
+/* PADDINGS */
+
+/*.wd-noPadding {padding: 0px;}*/
+/*.wd-noPaddingTop {padding-top: 0px;}*/
+/*.wd-noPaddingRight {padding-right: 0px;}*/
+/*.wd-noPaddingBottom {padding-bottom: 0px;}*/
+/*.wd-noPaddingLeft {padding-left: 0px;}*/
+
+/*.wd-padding10 {padding: 10px;}*/
+/*.wd-paddingTop10 {padding-top: 10px;}*/
+/*.wd-paddingRight10 {padding-right: 10px;}*/
+/*.wd-paddingBottom10 {padding-bottom: 10px;}*/
+/*.wd-paddingLeft10 {padding-left: 10px;}*/
+
+/*.wd-padding16 {padding: 16px;}*/
+/*.wd-paddingTop16 {padding-top: 16px;}*/
+/*.wd-paddingRight16 {padding-right: 16px;}*/
+/*.wd-paddingBottom16 {padding-bottom: 16px;}*/
+/*.wd-paddingLeft16 {padding-left: 16px;}*/
+
+/*.wd-padding60 {padding: 60px;}*/
+/*.wd-paddingTop60 {padding-top: 60px;}*/
+/*.wd-paddingRight60 {padding-right: 60px;}*/
+/*.wd-paddingBottom60 {padding-bottom: 60px;}*/
+/*.wd-paddingLeft60 {padding-left: 60px;}*/
+
+/* BORDERS */
 .wd-borderRadius4px {border-radius: 4px}
 .wd-borderRadius10px {border-radius: 10px}
 .wd-borderRadius12px {border-radius: 12px}
+.wd-borderRadius20px {border-radius: 20px}
 .wd-borderRadius50 {border-radius: 50px !important;}
 .wd-borderRadiusCircle {border-radius: 50% !important;}
 
-.testBorder{ border: 1px solid red;}
-
+/* WIDTH */
 .wd-width20 { width: 20px !important;}
 .wd-width100 { width: 100% !important;}
+
+
+/* CUSTOM STYLING */
+.testBorder{ border: 1px solid red;}
+
 
 input[type="radio"].wd-navBtn:checked+label {
   background-color: rgb(42,159, 214);
@@ -133,18 +177,20 @@ input[type="radio"].wd-navBtn:checked+label {
 }
 input.wd-searchBox:focus{ outline: none;}
 
-.wd-borderDiv{ border: 0px;
-  padding-bottom: 10px;}
+.wd-borderDiv{ border: 1px solid var(--darkGrey);}
 
 .wd-followList{ width: 30%;}
 
 .wd-noLinkDecor{ text-decoration: none; color: var(--lightGrey)}
 .wd-noLinkDecor:hover{ text-decoration: underline; color: var(--lightGrey)}
 
+.wd-noLinkLineDecor{ text-decoration: none; }
+.wd-noLinkLineDecor:hover{ text-decoration: none; font-weight: bold; color: white}
+
 .wd-whiteBG{background-color: white !important}
 .wd-transparentBG {background-color: transparent !important}
 .wd-lightGreyBG {background-color: #F6F6F6 !important}
-.wd-darkGreyBG {background-color: #222222 !important}
+.wd-darkGreyBG {background-color: var(--darkGrey) !important}
 .wd-blackBG {background-color: var(--black) !important}
 .wd-noBorders {border: 0px !important}
 
@@ -154,12 +200,20 @@ input.wd-searchBox:focus{ outline: none;}
 }
 .nav-item.nav-link:hover{
   border: 0px !important;
+  /* background-color: var(--darkGrey) !important; */
   color: white;
   font-weight: bold;
 }
 
 .nav-item.nav-link.active{
+  /* border-top: 0px solid;
+  border-left: 0px solid;
+  border-right: 0px solid; */
+  /* border-bottom: 5px solid dodgerblue !important; */
+  /* background-color: transparent !important; */
+  /* font-weight: bold; */
   color: white !important;
+  /* background-color: dodgerblue; */
 }
 
 .wd-whiteButton{
@@ -169,6 +223,7 @@ input.wd-searchBox:focus{ outline: none;}
 }
 
 .wd-blueButton{
+  /* background-color: dodgerblue !important; */
   color: white !important;
 }
 

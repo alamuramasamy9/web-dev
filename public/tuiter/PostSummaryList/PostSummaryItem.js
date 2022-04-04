@@ -16,7 +16,7 @@ const PostSummaryItem = (post) => {
                             <span class="wd-lightGreyFont wd-font14">- ${post.time}</span>
                         </div>
                         <div class="wd-whiteFont wd-font14">${post.title}</div>
-                        ${post.tweets ? `<span class="wd-lightGreyFont">${post.tweets} Tweets</span>` : ``} 
+                        ${post.tuits ? `<span class="wd-lightGreyFont">${post.tutis} Tweets</span>` : ``} 
                     </div>
                 </div>
                 <div>

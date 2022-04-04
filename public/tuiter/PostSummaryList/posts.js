@@ -12,7 +12,7 @@ export default [
         time: '1 day',
         title: 'JavaScript is programming language that can run on browsers as well as desktops',
         image: '../js.png',
-        tweets: '123K',
+        tuits: '123K',
     },
     {
         topic: 'Web Development',
@@ -20,7 +20,7 @@ export default [
         title: 'jQuery',
         time: 'last week',
         image: '../jq.png',
-        tweets: '122K',
+        tuits: '122K',
     },
     {
         topic: 'Web Development',
@@ -28,5 +28,5 @@ export default [
         title: '',
         time: 'last month',
         image: '../node.png',
-        tweets: '120K',
+        tuits: '120K',
     },];

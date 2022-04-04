@@ -3,10 +3,10 @@ import React from 'react'
 const WhoToFollowListItem = ({ who, key }) => {
 
     return (
-        <a key={key} href="/" className="list-group-item list-group-item-action wd-darkGreyBG wd-noBorders ">
+        <a key={key} href="#" className="list-group-item list-group-item-action wd-noBorders ">
             <div className='row'>
 
-                <div className='col-8 wd-flex-row'>
+                <div className='col-8 wd-flex-row wd-font14'>
                     <img src={who.avatarIcon} height="40px" width="40px" className="wd-borderRadiusCircle me-2" alt=""/>
                     <div className="wd-flex-column" style={{ whiteSpace: "nowrap" }}>
                         <div>

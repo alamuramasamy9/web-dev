@@ -15,7 +15,7 @@ const PostItem = ({ post, key }) => {
 
                 <div className='wd-flex-row'>
                     <div className='wd-flex-column'>
-                        <img src={post.profilePhoto} height="40px" width="40px" className="wd-borderRadiusCircle me-2" alt="" />
+                        <img src={post.profilePhoto} height="40px" width="40px" className="wd-borderRadiusCircle me-2" />
                     </div>
                     <div className='wd-flex-column ps-2'>
                         <div>
@@ -32,7 +32,7 @@ const PostItem = ({ post, key }) => {
 
 
                 <div className='wd-borderRadius12px border border-dark' >
-                    <img src={post.image} width="100%" height="264px" className='wd-borderRadius12px' alt=""/>
+                    <img src={post.image} width="100%" height="264px" className='wd-borderRadius12px' />
                     {post.descriptionHeading &&
                         <>
                             <br />
@@ -52,19 +52,19 @@ const PostItem = ({ post, key }) => {
 
 
             <div className='wd-flex-row wd-flex-justifySpaceBetween wd-flex-alignCenter ps-4 pe-4 mt-2' >
-                <a href='/' id='comment' className='wd-noLinkDecor wd-lightGreyFont'>
+                <a href='#' id='comment' className='wd-noLinkDecor wd-lightGreyFont'>
                     <i className="far fa-comment"></i>
                     {post.comment}
                 </a>
-                <a href='/' id='retweet' className='wd-noLinkDecor'>
+                <a href='#' id='retweet' className='wd-noLinkDecor'>
                     <i className="fas fa-retweet"></i>
                     {post.retweet}
                 </a>
-                <a href='/' id='like' className='wd-noLinkDecor'>
+                <a href='#' id='like' className='wd-noLinkDecor'>
                     <i className="far fa-heart"></i>
                     {post.like}
                 </a>
-                <a href='/' id='share' className='wd-noLinkDecor'>
+                <a href='#' id='share' className='wd-noLinkDecor'>
                     <i className="fas fa-upload"></i>
                 </a>
             </div>
@@ -77,3 +77,4 @@ const PostItem = ({ post, key }) => {
 
 }
 export default PostItem
+
