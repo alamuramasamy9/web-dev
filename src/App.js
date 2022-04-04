@@ -1,4 +1,4 @@
-import './vendors/bootstrap/css/bootstrap.min.css';
+/*import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
@@ -30,9 +30,9 @@ function App() {
     );
 }
 
-export default App;
+export default App;*/
 
-/* import './vendors/bootstrap/css/bootstrap.min.css';
+import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
@@ -49,8 +49,8 @@ function App() {
             <div className="container">
                 <Routes>
                     <Route path="/">
-                        <Route path="labs"
-                               element={<Labs/>}/>
+	                    <Route index element={<Labs />} />
+	                    <Route path="labs" exact={true} element={<Labs />} />
                         <Route path="hello"
                                element={<HelloWorld/>}/>
                         <Route path="tuiter"
@@ -69,7 +69,7 @@ function App() {
     );
 }
 
-export default App; */
+export default App;
 
 
 
