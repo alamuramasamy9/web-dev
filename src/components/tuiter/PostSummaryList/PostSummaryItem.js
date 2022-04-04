@@ -2,7 +2,7 @@ import React from 'react'
 
 const PostSummaryItem = ({ post, key }) => {
     return (
-        <a key={key} href="#" className="list-group-item list-group-item-action wd-noLinkOutline">
+        <a key={key} href="/" className="list-group-item list-group-item-action wd-noLinkOutline">
             <div className="wd-flex-row wd-flex-justifySpaceBetween wd-flex-alignCenter">
                 <div className="wd-flex-row pe-2">
                     <div className="wd-flex-column">
@@ -21,7 +21,7 @@ const PostSummaryItem = ({ post, key }) => {
                     </div>
                 </div>
                 <div>
-                    <img src={post.image} width="80px" height="80px" className="rounded"></img>
+                    <img src={post.image} alt="" width="80px" height="80px" className="rounded"></img>
                 </div>
             </div>
         </a>

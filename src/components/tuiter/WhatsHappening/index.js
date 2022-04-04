@@ -44,10 +44,10 @@ const WhatsHappening = () => {
                         <hr />
 
                         <span>
-                            <a href="#"><i className="far fa-image me-3"></i></a>
-                            <a href="#"><i className="far fa-chart-bar me-3"></i></a>
-                            <a href="#"><i className="far fa-smile me-3"></i></a>
-                            <a href="#"><i className="far fa-calendar me-3"></i></a>
+                            <a href="/"><i className="far fa-image me-3"></i></a>
+                            <a href="/"><i className="far fa-chart-bar me-3"></i></a>
+                            <a href="/"><i className="far fa-smile me-3"></i></a>
+                            <a href="/"><i className="far fa-calendar me-3"></i></a>
                         </span>
 
                         <button onClick={tuitClickHandler} className="btn btn-primary fa-pull-right rounded-pill">
