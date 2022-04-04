@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import { useDispatch, useSelector } from "react-redux";
 import NavigationSidebar from "../NavigationSidebar";
 import PostSummaryList from "../PostSummaryList";
@@ -7,12 +7,7 @@ import ProfileComponent from "./ProfileComponent";
 
 const ProfileScreen = () => {
 
-    const dispatch = useDispatch()
     const isEditProfile = useSelector((state) => state.profile.isEditing)
-
-    // useEffect(() => {
-    //     dispatch({ type: "isEdit-profileReducer", isEdit: false })
-    // }, [])
 
     return (
         <div className="row mt-2">

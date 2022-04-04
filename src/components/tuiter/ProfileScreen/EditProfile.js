@@ -15,7 +15,7 @@ const EditProfile = () => {
 
     const getModifiedDate = (date) => {
         let dateParts = date.split("/")
-        if (dateParts[1].length == 2)
+        if (dateParts[1].length === 2)
             return dateParts[2] + "-" + dateParts[0] + "-" + dateParts[1]
         else return dateParts[1] + "-" + dateParts[0] + "-" + dateParts[2]
     }
@@ -116,7 +116,7 @@ const EditProfile = () => {
                         onChange={(e) => {
                             let dateParts = e.target.value.split('-')
                             let dob = ""
-                            if (dateParts[2].length == 4)
+                            if (dateParts[2].length === 4)
                                 dob = dateParts[1] + '/' + dateParts[0] + '/' + dateParts[2]
                             else
                                 dob = dateParts[1] + '/' + dateParts[2] + '/' + dateParts[0]

@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import './tuit.css';
 import TuitStats from "./tuit-stats";
 
-const TuitListItem = ({ tuit: tuit }) => {
+const TuitListItem = ({ tuit }) => {
 
     const dispatch = useDispatch();
 
