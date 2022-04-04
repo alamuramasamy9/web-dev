@@ -42,7 +42,6 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ProfileScreen from "./components/tuiter/ProfileScreen";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
 import HomeScreen from "./components/tuiter/HomeScreen";
-import Tuiter from "./components/tuiter";
 
 function App() {
     return (
