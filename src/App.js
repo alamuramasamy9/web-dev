@@ -37,11 +37,12 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs/labs";
-import Tuiter from "./components/tuiter/index.js";
+import Index from "./components/tuiter/index.js";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ProfileScreen from "./components/tuiter/ProfileScreen";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
 import HomeScreen from "./components/tuiter/HomeScreen";
+import Tuiter from "./components/tuiter";
 
 function App() {
     return (
@@ -51,16 +52,12 @@ function App() {
                     <Route path="/">
 	                    <Route index element={<Labs />} />
 	                    <Route path="labs" exact={true} element={<Labs />} />
-                        <Route path="hello"
-                               element={<HelloWorld/>}/>
-                        <Route path="tuiter"
-                               element={<Tuiter/>}>
-                            <Route index
-                                   element={<HomeScreen/>}/>
-                            <Route path="explore"
-                                   element={<ExploreScreen/>}/>
-                            <Route path="profile"
-                                   element={<ProfileScreen/>}/>
+                        <Route path="hello" element={<HelloWorld/>}/>
+                        <Route path="tuiter" element={<Index/>}>
+                            <Route index element={<HomeScreen/>}/>
+                            <Route path="home" element={<HomeScreen/>}/>
+                            <Route path="explore" element={<ExploreScreen/>}/>
+                            <Route path="profile" element={<ProfileScreen/>}/>
                         </Route>
                     </Route>
                 </Routes>

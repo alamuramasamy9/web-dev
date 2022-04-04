@@ -23,7 +23,7 @@ const WhatsHappening = () => {
                 <tr>
 
                     <td style={{ verticalAlign: 'top' }}>
-                        <img src={'/images/profileReducer.png'}
+                        <img src={'/images/profile.jpg'}
                             className="rounded-circle"
                             style={{ width: '48px', margin: '16px' }} alt=""/>
                     </td>

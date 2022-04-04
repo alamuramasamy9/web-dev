@@ -13,7 +13,7 @@ const ExploreScreen = () => {
                  style={{"position": "relative"}}>
                 <ExploreComponent/>
             </div>
-            <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 pt-3 col-xxl-3 wd-textCenter ">
+            <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 pt-3 col-xxl-3 wd-textCenter ">
                 <WhoToFollowList/>
             </div>
         </div>

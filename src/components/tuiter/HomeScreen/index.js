@@ -14,7 +14,7 @@ const HomeScreen = () => {
                 <WhatsHappening />
                 <TuitList />
             </div>
-            <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+            <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <PostSummaryList src="home" />
             </div>
         </div>

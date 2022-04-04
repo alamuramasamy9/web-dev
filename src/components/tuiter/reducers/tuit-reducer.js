@@ -39,8 +39,8 @@ const tuitReducer = (state = initialState, action) => {
                 "handle": "al_ra",
                 "time": "now",
                 ...action.tuit,
-                "avatar-image": "/images/profileReducer.png",
-                "logo-image": "/images/profileReducer.png",
+                "avatar-image": "/images/profile.jpg",
+                "logo-image": "/images/profile.jpg",
                 "stats": {
                     "comments": 21,
                     "retweets": 22,

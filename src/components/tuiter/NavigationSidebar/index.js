@@ -48,7 +48,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
                     <span className="d-none d-xl-inline">Lists</span>
                 </Link>
 
-                <Link to="/tuiter/profileReducer"
+                <Link to="/tuiter/profile"
                     className={`list-group-item wd-noLinkLineDecor ${active === 'profile' ? 'active' : ''}`}>
                     <i className="far fa-user wd-width20 wd-whiteFont"></i>
                     <span className="d-none d-xl-inline">Profile</span>
