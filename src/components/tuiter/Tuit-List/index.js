@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector}
     from "react-redux";
-import {findAllTuits, deleteTuit}
+import {findAllTuits}
     from "../../../actions/tuits-actions";
 
 
@@ -16,8 +16,7 @@ const TuitList = () => {
 
     const dispatch = useDispatch();
     useEffect(() =>
-            findAllTuits(dispatch),
-        []);
+            findAllTuits(dispatch));
 
 
 
