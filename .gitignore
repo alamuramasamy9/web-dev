@@ -1,8 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+444444666666666666666666666666<<<<<<< HEAD
 .idea
 node_modules
 
 # dependencies
+=======
+
+# dependencies
+node_modules
+.idea
+
+>>>>>>> b8c4fb0 (a8 REST sp22)
 /node_modules
 /.pnp
 .pnp.js
