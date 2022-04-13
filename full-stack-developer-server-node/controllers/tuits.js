@@ -92,7 +92,7 @@ export default [
         "stats": {
             "comments": 789,
             "retweets":12 ,
-            "likes": 345
+            "likes": 34
         }
     }
 ];
