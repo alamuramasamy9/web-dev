@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
+import { createTuit } from "../../../actions/tuits-actions";
+
 const WhatsHappening = () => {
 
     const dispatch = useDispatch();
@@ -17,6 +19,9 @@ const WhatsHappening = () => {
         setWhatsHappening('')
     }
 
+    const [newTuit, setNewTuit] =
+          useState({tuit: 'New tuit'});
+
     return (
         <>
             <table style={{ marginBottom: '16px' }}>
@@ -30,14 +35,17 @@ const WhatsHappening = () => {
 
                     <td style={{ width: "100%" }}>
                         <textarea value={whatsHappening}
-                            onChange={(event) => setWhatsHappening(event.target.value)}
-                            className="form-control"
+                            onChange={(e) =>
+                                         setNewTuit({
+                                         tuit: e.target.value})}
+                            className="form-control w-75"
                             style={{
                                 width: "100%", color: "white",
                                 padding: "0px",
                                 paddingTop: "15px",
                                 backgroundColor: "black"
                             }}
+
                             placeholder="What's happening?">
                         </textarea>
 
@@ -50,7 +58,8 @@ const WhatsHappening = () => {
                             <a href="/"><i className="far fa-calendar me-3"></i></a>
                         </span>
 
-                        <button onClick={tuitClickHandler} className="btn btn-primary fa-pull-right rounded-pill">
+                        <button onClick={() =>
+                                          createTuit(dispatch, newTuit)} setNewTuit='New Tuit' className="btn btn-primary fa-pull-right rounded-pill">
                             Tuit
                         </button>
                     </td>
