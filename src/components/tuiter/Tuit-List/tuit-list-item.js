@@ -9,9 +9,6 @@ const TuitListItem = ({ tuit }) => {
 
     const dispatch = useDispatch();
 
-    const deleteTuitClickHandler = () => {
-        dispatch({ type: 'delete-tuit', tuit: tuit })
-    }
 
     return (
         <li className="list-group-item">
