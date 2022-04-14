@@ -42,7 +42,7 @@ console.log(tuits);
 
 export default TuitList;*/
 
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector}
   from "react-redux";
 import TuitListItem from "./tuit-list-item";
@@ -60,6 +60,8 @@ const TuitList = () => {
      useEffect(() =>
        findAllTuits(dispatch),
        []);
+
+     const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
 
 
 

@@ -25,7 +25,7 @@ const WhatsHappening = () => {
                     </td>
 
                     <td style={{ width: "100%" }}>
-                        <textarea value={whatsHappening}
+                        <textarea
                             onChange={(e) =>
                                          setNewTuit({
                                          tuit: e.target.value})}

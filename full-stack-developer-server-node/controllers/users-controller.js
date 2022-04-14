@@ -16,6 +16,13 @@ const createUser = (req, res) => {
     res.json(newUser);
 }
 
+const findUsersByType = (type) =>{
+let val = []
+for(var i = 0; i< users.length; i++){
+if(users[i]["type"] === type){
+val.push(users[i]["username"])}}
+return val}
+
 
 const findAllUsers = (req, res) => {
     const type = req.query.type;

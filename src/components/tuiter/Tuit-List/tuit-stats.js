@@ -15,28 +15,40 @@ const TuitStats = ({ tuit }) => {
         <div className="row mt-2">
 
             <div className="col">
+            {tuit.comments}&nbsp;&nbsp;
                 <i className="far fa-comment me-2"></i>
 
 
             </div>
 
             <div className="col">
+            {tuit.retweets}&nbsp;&nbsp;
                 <i className="fas fa-retweet me-2"></i>
-123
-            </div>
-
-            <div className="col" onClick={() => updateTuit(dispatch, {
-                                                ...tuit,
-                                                likes: tuit.stats.likes + 1
-                                              })} >
-                {tuit.liked &&
-                    <i className="fas fa-heart me-2" style={{ color: tuit.liked ? 'red' : "white" }}></i>
-                }
-                {!tuit.liked &&
-                    <i className="far fa-heart me-2"></i>
-                }
 
             </div>
+
+            <div className="col">
+
+                                    <label>
+                                        {tuit.likes}
+                                        <i onClick={() => updateTuit(dispatch, {
+                                            ...tuit,
+                                            likes: tuit.likes + 1
+                                        })} className="far fa-thumbs-up ms-3 me-2"></i>
+                                    </label>
+                                    </div>
+
+                        <div className="col">
+
+                                                <label>
+                                                    {tuit.dislikes}
+                                                    <i onClick={() => updateTuit(dispatch, {
+                                                        ...tuit,
+                                                        dislikes: tuit.dislikes + 1
+                                                    })} className="far fa-thumbs-down ms-3 me-2"></i>
+                                                </label>
+                                                </div>
+
 
             <div className="col">
                 <i className="fas fa-external-link-alt me-2"></i>
