@@ -5,6 +5,13 @@ const createTuit = (req, res) => {
     const newTuit = req.body;
     newTuit._id = (new Date()).getTime()+'';
     newTuit.likes = 0;
+    newTuit.dislikes = 0;
+    newTuit.comments = 0;
+    newTuit.userName = "Alamu Ramasamy";
+    newTuit.handle = "al_ra";
+    newTuit.logoImage = "/images/profile.jpg";
+
+    newTuit.retweets = 0;
     tuits.push(newTuit);
     res.json(newTuit);
 }

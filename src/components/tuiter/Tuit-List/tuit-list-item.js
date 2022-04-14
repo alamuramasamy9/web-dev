@@ -18,7 +18,7 @@ const TuitListItem = ({ tuit }) => {
                     <td className="align-text-top">
                         <img
                             className="rounded-circle wd-avatar-image"
-                            src={tuit['logo-image']} alt=""
+                            src={tuit['logoImage']} alt=""
                         />
                     </td>
 
